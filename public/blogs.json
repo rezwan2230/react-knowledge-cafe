@@ -1,0 +1,72 @@
+[
+    {
+        "id": "1",
+        "cover": "https://i.ibb.co/wstsxCG/portrait-young-pretty-smiling-woman-sitting-table-black-shirt-working-laptop-co-working-office-weari.jpg",
+        "title": "The Hitchhiker's Guide to the Galaxy",
+        "author": "Douglas Adams",
+        "author_img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Douglas_Adams_2001.jpg/220px-Douglas_Adams_2001.jpg",
+        "posted_date": "2023-09-13T19:53:49.49Z",
+        "reading_time": 3,
+        "hashtags": [
+            "science-fiction",
+            "comedy",
+            "adventure"
+        ]
+    },
+    {
+        "id": "2",
+        "cover": "https://i.ibb.co/Pzss2Cs/vlogger-using-smartphone-record-video-vlog-channel.jpg",
+        "title": "The Lord of the Rings",
+        "author": "J.R.R. Tolkien",
+        "author_img": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b7/JRR_Tolkien_1916.jpg/220px-JRR_Tolkien_1916.jpg",
+        "posted_date": "2023-09-13T19:53:49.49Z",
+        "reading_time": 10,
+        "hashtags": [
+            "fantasy",
+            "adventure",
+            "epic"
+        ]
+    },
+    {
+        "id": "3",
+        "cover": "https://i.ibb.co/4THX27x/diverse-friends-using-digital-devices.jpg",
+        "title": "Harry Potter and the Sorcerer's Stone",
+        "author": "J.K. Rowling",
+        "author_img": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/J._K._Rowling_2008.jpg/220px-J._K._Rowling_2008.jpg",
+        "posted_date": "2023-09-13T19:53:49.49Z",
+        "reading_time": 6,
+        "hashtags": [
+            "young-adult",
+            "fantasy",
+            "adventure"
+        ]
+    },
+    {
+        "id": "4",
+        "cover": "https://i.ibb.co/S7xXZhz/media-journalism-global-daily-news-content-concept.jpg",
+        "title": "The Hunger Games",
+        "author": "Suzanne Collins",
+        "author_img": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a5/Suzanne_Collins_2012.jpg/220px-Suzanne_Collins_2012.jpg",
+        "posted_date": "2023-09-13T19:53:49.49Z",
+        "reading_time": 4,
+        "hashtags": [
+            "young-adult",
+            "dystopian",
+            "romance"
+        ]
+    },
+    {
+        "id": "5",
+        "cover": "https://i.ibb.co/n8Tj3gM/cute-girl-works-laptop-hipster-cafe.jpg",
+        "title": "The Fault in Our Stars",
+        "author": "John Green",
+        "author_img": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/John_Green_by_Gage_Skidmore_2014.jpg/220px-John_Green_by_Gage_Skidmore_2014.jpg",
+        "posted_date": "2023-09-13T19:53:49.49Z",
+        "reading_time": 3,
+        "hashtags": [
+            "young-adult",
+            "romance",
+            "coming-of-age"
+        ]
+    }
+]
