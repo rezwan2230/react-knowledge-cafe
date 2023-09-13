@@ -2,8 +2,7 @@ import PropTypes from 'prop-types';
 import profile from './../../assets/images/profile.png'
 import { FaBookmark } from 'react-icons/fa';
 
-const Blog = ({ blog }) => {
-    console.log(blog)
+const Blog = ({ blog, handleBookmark }) => {
     const { title, author, cover, hashtags, posted_date, reading_time } = blog
     return (
         <section className='mb-16'>
@@ -21,13 +20,13 @@ const Blog = ({ blog }) => {
                     </div>
                     <div className='flex gap-3'>
                     <span>{reading_time} min read </span>
-                    <button className=' text-red-500 text-xl'><FaBookmark></FaBookmark></button>
+                    <button className=' text-red-500 text-xl'><FaBookmark onClick={()=>handleBookmark(blog)}></FaBookmark></button>
                     </div>
                 </div>
                 <h1 className='font-bold text-2xl mb-4'>{title}</h1>
                 <div className='flex gap-3'>
                 {
-                    hashtags.map((hastag, index)=><span key={index}> <a href="">#{hastag}</a></span>)
+                    hashtags.map((hastag, index)=><span key={index}> <a className='text-blue-900' href="">#{hastag}</a></span>)
                 }
                 </div>
             </div>
@@ -36,7 +35,9 @@ const Blog = ({ blog }) => {
 };
 
 Blog.propTypes = {
-    blog: PropTypes.object.isRequired
+    blog: PropTypes.object.isRequired,
+    handleBookmark:PropTypes.func
+
 }
 
 export default Blog;
