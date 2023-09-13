@@ -1,15 +1,16 @@
 import PropTypes from 'prop-types';
 import profile from './../../assets/images/profile.png'
+import { FaBookmark } from 'react-icons/fa';
 
 const Blog = ({ blog }) => {
     console.log(blog)
-    const { title, author, author_img, cover, hashtags, posted_date, reading_time } = blog
+    const { title, author, cover, hashtags, posted_date, reading_time } = blog
     return (
-        <section className='mt-16'>
+        <section className='mb-16'>
             <div>
-                <img className="w-[700px] h-[400px]" src={cover} alt="" />
-                <div className='flex justify-between'>
-                    <div className='flex gap-5 items-center my-5'>
+                <img className="w-full h-[470px] rounded-lg" src={cover} alt="" />
+                <div className='flex justify-between items-center'>
+                    <div className='flex gap-5 items-center my-6'>
                         <div>
                             <img src={profile} alt="" />
                         </div>
@@ -18,14 +19,17 @@ const Blog = ({ blog }) => {
                             <p>{posted_date}</p>
                         </div>
                     </div>
-                    <div>
-                        <p>{reading_time} minute read</p>
+                    <div className='flex gap-3'>
+                    <span>{reading_time} min read </span>
+                    <button className=' text-red-500 text-xl'><FaBookmark></FaBookmark></button>
                     </div>
                 </div>
-                <h1 className='font-bold text-2xl'>{title}</h1>
+                <h1 className='font-bold text-2xl mb-4'>{title}</h1>
+                <div className='flex gap-3'>
                 {
                     hashtags.map((hastag, index)=><span key={index}> <a href="">#{hastag}</a></span>)
                 }
+                </div>
             </div>
         </section>
     );
