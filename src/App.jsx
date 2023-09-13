@@ -10,9 +10,10 @@ function App() {
 
   const [readingTime, setReadingTime] = useState(0)
  
-  const handleReadingTime = time => {
-    console.log("Time will be added", time)
+  const handleReadingTime = (id, time) => {
     setReadingTime(readingTime+time)
+    const remainingBookmark = bookmarks.filter(bookmark=>bookmark.id!==id)
+    setBookmarks(remainingBookmark)
   }
 
 
@@ -27,7 +28,6 @@ function App() {
         <div className='md:flex'>
           <Blogs handleBookmark={handleBookmark} 
           handleReadingTime={handleReadingTime}></Blogs>
-
           <BookMarks bookmarks={bookmarks} readingTime={readingTime}></BookMarks>
         </div>
       </div>

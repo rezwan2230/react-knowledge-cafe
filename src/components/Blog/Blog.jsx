@@ -3,7 +3,7 @@ import profile from './../../assets/images/profile.png'
 import { FaBookmark } from 'react-icons/fa';
 
 const Blog = ({ blog, handleBookmark, handleReadingTime}) => {
-    const { title, author, cover, hashtags, posted_date, reading_time } = blog
+    const {id, title, author, cover, hashtags, posted_date, reading_time } = blog
     return (
         <section className='mb-16'>
             <div>
@@ -29,7 +29,7 @@ const Blog = ({ blog, handleBookmark, handleReadingTime}) => {
                     hashtags.map((hastag, index)=><span key={index}> <a className='text-blue-900' href="">#{hastag}</a></span>)
                 }
                 </div>
-                <button onClick={()=>handleReadingTime(reading_time)} className='mt-4 text-[#6047EC] font-semibold underline underline-offset-2'>Mark as read</button>
+                <button onClick={()=>handleReadingTime(id, reading_time)} className='mt-4 text-[#6047EC] font-semibold underline underline-offset-2'>Mark as read</button>
             </div>
         </section>
     );
